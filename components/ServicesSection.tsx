@@ -19,10 +19,11 @@ const ServiceCard: React.FC<Service> = ({ title, icon, preview, details, result,
                 <div className="absolute inset-0 h-full w-full rounded-[24px] overflow-hidden [backface-visibility:hidden] border border-white/10 bg-[#0a0a0a] shadow-2xl">
                     {/* Image Background */}
                     <div className="absolute inset-0">
-                        <img 
-                            src={image} 
-                            alt={title} 
-                            className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-out" 
+                        <img
+                            src={image}
+                            alt={title}
+                            loading="lazy"
+                            className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-out"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
                         <div className="absolute inset-0 bg-brand-purple/10 mix-blend-overlay" />
@@ -87,8 +88,7 @@ const ServicesSection: React.FC = () => {
             icon: <Bot size={28} />,
             title: "Agenți AI pentru Business",
             preview: "Un angajat digital care nu obosește, nu face greșeli și costă de 10 ori mai puțin.",
-            // Image: Futuristic AI/Robot Face - implies digital intelligence
-            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/ai-agent.jpg",
             details: [
                 "Procesează documente automat",
                 "Răspund la emailuri inteligent",
@@ -100,8 +100,7 @@ const ServicesSection: React.FC = () => {
             icon: <MessageSquare size={28} />,
             title: "Chatbot AI pentru Clienți",
             preview: "Clienții primesc răspunsuri instant. Non-stop. Fără echipă de suport.",
-            // Image: Digital Network/Communication Nodes - implies conversation flow
-            image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/chatbot.jpg",
             details: [
                 "Răspunde la 90% din întrebări",
                 "Califică lead-urile 24/7",
@@ -113,8 +112,7 @@ const ServicesSection: React.FC = () => {
             icon: <Zap size={28} />,
             title: "Automatizare Flux de Lucru",
             preview: "Conectăm toate sistemele tale într-un flux care merge singur.",
-            // Image: Long exposure traffic/light trails - implies speed and flow
-            image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/automation.jpg",
             details: [
                 "Sincronizare CRM ↔ Facturare",
                 "Notificări inteligente erori",
@@ -126,8 +124,7 @@ const ServicesSection: React.FC = () => {
             icon: <Phone size={28} />,
             title: "Receptionist AI",
             preview: "Apelurile tale preluate profesionist, non-stop, fără salarii.",
-            // Image: Professional Studio Microphone - implies voice/audio
-            image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/receptionist.jpg",
             details: [
                 "Voce naturală în română",
                 "Programează în calendar",
@@ -139,8 +136,7 @@ const ServicesSection: React.FC = () => {
             icon: <Link size={28} />,
             title: "Integrări Sisteme",
             preview: "Conectăm aplicațiile pe care le folosești deja să comunice între ele.",
-            // Image: Abstract Digital Network / Nodes - implies digital connection and API integration
-            image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/integration.jpg",
             details: [
                 "Eliminare introducere manuală",
                 "Date corecte în timp real",
@@ -152,8 +148,7 @@ const ServicesSection: React.FC = () => {
             icon: <Shield size={28} />,
             title: "Suport & Mentenanță",
             preview: "Nu te lăsăm singur după implementare.",
-            // Image: Code/Monitoring Screen - implies technical oversight
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+            image: "/images/services/support.jpg",
             details: [
                 "Monitorizare continuă",
                 "Răspuns rapid (max 4h)",

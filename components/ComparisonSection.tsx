@@ -38,7 +38,7 @@ const ComparisonSection: React.FC = () => {
                     <div className="w-full bg-[#1a1a24] border border-white/5 rounded-2xl p-4 mb-4 transform transition-transform duration-500 group-hover:-translate-y-2 hover:bg-[#20202b] relative overflow-hidden">
                         <div className="flex justify-between items-start mb-2">
                             <div className="flex gap-3">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100" alt="Founder" className="w-10 h-10 rounded-full object-cover border border-white/10" />
+                                <img src="/images/profile.jpg" alt="Founder" loading="lazy" className="w-10 h-10 rounded-full object-cover border border-white/10" />
                                 <div>
                                     <p className="text-sm font-bold text-white">Alex Popescu</p>
                                     <p className="text-[10px] text-white/40">Founder la Startup SRL</p>

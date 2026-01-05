@@ -1,17 +1,20 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+type ButtonHTMLAttributes = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type AnchorHTMLAttributes = React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
 interface BaseButtonProps {
   children: React.ReactNode;
   className?: string;
   variant?: 'primary' | 'secondary';
   href?: string;
   onClick?: () => void;
-  // Allow other standard props
-  [key: string]: any;
 }
 
-export const Button: React.FC<BaseButtonProps> = ({ children, className = '', variant = 'primary', href, onClick, ...props }) => {
+type ButtonProps = BaseButtonProps & (ButtonHTMLAttributes | AnchorHTMLAttributes);
+
+export const Button: React.FC<ButtonProps> = ({ children, className = '', variant = 'primary', href, onClick, ...props }) => {
   const baseStyles = "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 font-sans font-medium text-lg tracking-wide group cursor-pointer";
   const variants = {
     primary: "bg-btn-gradient text-white shadow-[inset_0px_2px_5px_0px_rgba(255,255,255,0.4),inset_0px_-3px_10px_0px_rgb(138,77,255)] hover:scale-[1.02] active:scale-[0.98]",

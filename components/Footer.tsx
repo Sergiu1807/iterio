@@ -26,11 +26,11 @@ const Footer: React.FC = () => {
             <div className="flex flex-col gap-4">
                 <h4 className="text-white font-semibold mb-2">Servicii</h4>
                 <div className="flex flex-col gap-2">
-                    <span className="text-white/60 text-sm hover:text-white transition-colors cursor-pointer">Agenți AI</span>
-                    <span className="text-white/60 text-sm hover:text-white transition-colors cursor-pointer">Chatbot AI</span>
-                    <span className="text-white/60 text-sm hover:text-white transition-colors cursor-pointer">Automatizare Procese</span>
-                    <span className="text-white/60 text-sm hover:text-white transition-colors cursor-pointer">Receptionist Virtual</span>
-                    <span className="text-white/60 text-sm hover:text-white transition-colors cursor-pointer">Integrări Sisteme</span>
+                    <span className="text-white/60 text-sm">Agenți AI</span>
+                    <span className="text-white/60 text-sm">Chatbot AI</span>
+                    <span className="text-white/60 text-sm">Automatizare Procese</span>
+                    <span className="text-white/60 text-sm">Receptionist Virtual</span>
+                    <span className="text-white/60 text-sm">Integrări Sisteme</span>
                 </div>
             </div>
 
@@ -66,10 +66,10 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5">
             <span className="text-white/40 text-sm">© 2026 ITERIO. Toate drepturile rezervate.</span>
-            <div className="flex gap-6">
-                <a href="#" className="text-white/40 text-sm hover:text-white transition-colors">Termeni și Condiții</a>
-                <a href="#" className="text-white/40 text-sm hover:text-white transition-colors">Politica de Confidențialitate</a>
-            </div>
+            {/* <div className="flex gap-6">
+                <a href="/termeni-si-conditii" className="text-white/40 text-sm hover:text-white transition-colors">Termeni și Condiții</a>
+                <a href="/politica-confidentialitate" className="text-white/40 text-sm hover:text-white transition-colors">Politica de Confidențialitate</a>
+            </div> */}
         </div>
 
       </div>
