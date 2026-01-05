@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatizare și AI pentru Business | ITERIO România</title>
+    <meta name="description" content="Implementăm chatboți AI, agenți virtuali și automatizări care economisesc 20+ ore/săptămână. Garanție rezultat. Analiză gratuită." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter Tight"', 'sans-serif'],
+              serif: ['"Instrument Serif"', 'serif'],
+              inter: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                purple: '#923ffc',
+                lightPurple: '#d2b0fc',
+                dark: '#050505',
+                card: '#170730',
+                cardStroke: '#460da1'
+              }
+            },
+            backgroundImage: {
+              'hero-gradient': 'linear-gradient(180deg, #0d0d1e 0%, #000 100%)',
+              'purple-radial': 'radial-gradient(circle at center, #170730 0%, #000000 100%)',
+              'btn-gradient': 'linear-gradient(90deg, rgb(117, 49, 229) 0%, rgb(63, 0, 153) 100%)',
+              'card-gradient': 'radial-gradient(98% 97% at 98% 2%, rgb(118, 51, 204) 0%, rgb(91, 38, 178) 19%, rgb(64, 25, 127) 49%, rgb(43, 17, 86) 68%, rgb(20, 0, 51) 100%)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

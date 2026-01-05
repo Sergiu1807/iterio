@@ -1,0 +1,35 @@
+{
+  "name": "iterio",
+  "version": "1.0.0",
+  "description": "ITERIO - Agenție de automatizare și consultanță AI din România. Website care prezintă soluții de automatizare inteligentă pentru business.",
+  "author": "ITERIO",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "keywords": [
+    "automation",
+    "ai",
+    "chatbot",
+    "business",
+    "consulting",
+    "romania"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "lucide-react": "^0.562.0",
+    "framer-motion": "^12.23.26"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
