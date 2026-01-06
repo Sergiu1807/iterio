@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             
             {/* Logo Column */}
             <div className="flex flex-col gap-6">
-                <div className="h-[35px] w-auto">
+                <div className="h-[45px] w-auto">
                      {/*
                         IMPORTANT: Please ensure 'iterio-colorlogo.png' is located
                         in the ROOT directory (same level as index.html), not in /components.

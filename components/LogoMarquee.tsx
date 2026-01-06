@@ -15,7 +15,7 @@ const LogoMarquee: React.FC = () => {
     <section className="w-full py-16 bg-black overflow-hidden flex flex-col items-center gap-10">
        <div className="text-center px-4">
          <h2 className="text-3xl md:text-5xl font-semibold font-inter tracking-tight text-white/95">
-           What Other <span className="font-serif italic text-brand-lightPurple font-normal">Founders</span> Have to Say
+           Integrăm <span className="font-serif italic text-brand-lightPurple font-normal">soluțiile</span> tale existente
          </h2>
        </div>
 
