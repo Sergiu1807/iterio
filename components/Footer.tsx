@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
             {/* Logo Column */}
             <div className="flex flex-col gap-6">
                 <div className="h-[35px] w-auto">
-                     {/* 
-                        IMPORTANT: Please ensure 'iterio-colorlogo.png' is located 
+                     {/*
+                        IMPORTANT: Please ensure 'iterio-colorlogo.png' is located
                         in the ROOT directory (same level as index.html), not in /components.
                      */}
-                    <img src="iterio-colorlogo.png" alt="ITERIO" className="h-full w-auto object-contain" />
+                    <img src="/iterio-colorlogo.png" alt="ITERIO" className="h-full w-auto object-contain" />
                 </div>
                 <p className="text-[#adabb0] text-sm italic font-medium leading-relaxed font-serif">
                     Transformăm businessuri prin automatizare inteligentă.

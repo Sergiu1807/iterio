@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
         >
             <a href="#home" className="flex items-center gap-3 group relative z-50">
                 <div className="h-[35px] w-auto">
-                    <img src="iterio-colorlogo.png" alt="ITERIO" className="h-full w-auto object-contain" />
+                    <img src="/iterio-colorlogo.png" alt="ITERIO" className="h-full w-auto object-contain" />
                 </div>
             </a>
 
