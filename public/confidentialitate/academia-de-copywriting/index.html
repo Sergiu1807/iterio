@@ -45,7 +45,7 @@ footer a{color:var(--muted)}
 <div class="eyebrow"><a href="https://iterio.ro">ITERIO</a> · Confidențialitate · Academia de Copywriting</div>
 <h1>Politica de confidențialitate</h1>
 <p class="sub">Aplicația <strong>Academia Call Intelligence</strong></p>
-<p class="updated">Ultima actualizare: 22 septembrie 2026</p>
+<p class="updated">Ultima actualizare: 24 septembrie 2026</p>
 
 <p>Documentul acesta explică ce date prelucrează aplicația <strong>Academia Call Intelligence</strong>, de ce, unde sunt stocate și ce drepturi ai. Se aplică exclusiv acestei aplicații, construită de ITERIO pentru Academia de Copywriting. Alte servicii ITERIO au propriile politici.</p>
 
@@ -84,10 +84,10 @@ footer a{color:var(--muted)}
 <li><strong>Analize</strong> derivate: obiecții ridicate, modul în care au fost tratate, rezultatul apelului</li>
 <li><strong>Metadate</strong> din CRM: data apelului, durata, numele membrului echipei care a sunat</li>
 </ul>
-<p>Persoanele apelate sunt informate despre înregistrare de către operator, în cadrul apelului. ITERIO nu inițiază apeluri și nu contactează direct aceste persoane.</p>
+<p>Informarea persoanelor apelate cu privire la înregistrarea și analiza apelurilor revine operatorului, Academia de Copywriting. ITERIO nu inițiază apeluri și nu contactează direct aceste persoane.</p>
 
 <h2>5. Unde sunt stocate</h2>
-<p>Toată infrastructura rulează în <strong>contul Google Cloud al Academiei de Copywriting</strong>, în regiunea <strong>europe-west1 (Belgia, Uniunea Europeană)</strong>. Documentele rezultate ajung în Google Drive-ul desemnat de operator. Datele nu sunt transferate în afara Uniunii Europene de către ITERIO.</p>
+<p>Toată infrastructura rulează în <strong>contul Google Cloud al Academiei de Copywriting</strong>. Înregistrările, transcrierile și analizele sunt <strong>stocate în regiunea europe-west1 (Belgia, Uniunea Europeană)</strong>. Transcrierea și analiza automată se fac prin Vertex AI (Google) pe <strong>endpoint-ul multi-regional al Uniunii Europene</strong>, astfel încât procesarea rămâne în UE. Documentele rezultate ajung în Google Drive-ul desemnat de operator. Datele nu sunt transferate în afara Uniunii Europene de către ITERIO.</p>
 <p>ITERIO nu deține o copie a acestor date pe propria infrastructură. Accesul tehnic al ITERIO există exclusiv pentru administrarea sistemului și poate fi retras oricând de către operator.</p>
 
 <h2>6. Cât timp sunt păstrate</h2>
@@ -104,6 +104,7 @@ footer a{color:var(--muted)}
 <li>Accesul la infrastructură se face prin conturi nominale și conturi tehnice, cu permisiuni limitate la strictul necesar</li>
 <li>Credențialele sunt păstrate criptat, în Google Secret Manager</li>
 <li>Spațiul de stocare al înregistrărilor are accesul public blocat la nivel de configurație</li>
+<li>Memorarea temporară (cache) a datelor de către Vertex AI este dezactivată</li>
 <li>Aplicația nu expune public niciun fel de conținut al apelurilor</li>
 </ul>
 
